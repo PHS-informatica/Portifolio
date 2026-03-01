@@ -5,89 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/img/PHS INFORMÁTICA - Logo.png">
-    <title>Skills</title>
+    <title>Especialidades & Formação | Paulo Henrique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <nav class="cabecalho">
+    <header class="cabecalho">
+        <nav class="cabecalho__container">
             <a class="logotipo" href="index.html">
-                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="logotipo de PHS-informatica"> 
+                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="Logo PHS"> 
             </a>
-
             <div class="menu__atalhos">
-                <a class="menu__atalhos__links" href="index.html">Sobre mim</a>
+                <a class="menu__atalhos__links" href="index.html">Sobre</a>
                 <a class="menu__atalhos__links" href="skills.html">Skills</a>
-                <a class="menu__atalhos__links" href="formação.html">Formação</a>
                 <a class="menu__atalhos__links" href="projetos.html">Projetos</a>
-                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Curriculo</a>
-                <a class="menu__atalhos__links" href="hobbies.html">Hobbies</a>
+                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Currículo</a>
                 <a class="menu__atalhos__links" href="contato.html">Contato</a>
             </div>
         </nav>   
-    </header>   
+    </header>        
 
-    <main>
-        <h1 class="titulo_skills">Hard Skills</h1>
-        <nav class="linguagens">
+    <main class="principal">
+        <h1 class="titulo__secao">Especialidades & Formação</h1>
+        
+        <div class="skills__grid">
+            <section class="skill__card">
+                <div class="card__header">
+                    <img src="./assets/img/Logo SQL.png" alt="Dados" class="card__icon">
+                    <h3>Análise de Dados Estratégica</h3>
+                </div>
+                <div class="skill__badges">
+                    <span>Power BI</span>
+                    <span>Tabular Editor</span>
+                    <span>ALM Toolkit</span>
+                    <span>Postman</span>
+                    <span>Power Automate</span>
+                    <span>M</span>
+                    <span>Dax</span>
+                    <span>SQL (Oracle/MySQL/SQL Server)</span>
+                    <span>APIs</span>
+                    <span>Python para Dados</span>
+                    
+                    
+                </div>
+                <div class="card__formacao">
+                    <p><strong>Foco:</strong> Transformação de dados em insights para tomada de decisão.</p>
+                </div>
+            </section>
 
-            <a class="apresentacao__skills">
-                <img class="skills_logo" src="./assets/img/logo html.png" alt="logotipo do html">
-                <h3 class="descrition_skills">HTML 5</h3>
-            </a>
-            
-            
-            <a class="apresentacao__skills">
-                <img class="skills_logo" src="./assets/img/logo css.png" alt="logotipo do CSS">
-                <h3 class="descrition_skills">CSS</h3>
-            </a>
-            
-            <a class="apresentacao__skills">
-                <img class="skills_logo" src="./assets/img/logo JS.png" alt="logotipo do java script">
-                <h3 class="descrition_skills">JavaScript</h3>
-            </a>
-            
-            <a class="apresentacao__skills">
-                <img class="skills_logo" src="./assets/img/logo IA.png" alt="logotipo do open ai">
-                <h3 class="descrition_skills">I. A. Generativa</h3>
-            </a>
+            <section class="skill__card">
+                <div class="card__header">
+                    <img src="./assets/img/logo-react-512.png" alt="Dev" class="card__icon">
+                    <h3>Desenvolvimento Web</h3>
+                </div>
+                <div class="skill__badges">
+                    <span>Flask (Python)</span>
+                    <span>React & Vite</span>
+                    <span>JavaScript</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>APIs RESTful</span>
+                    <span>I.A. Generativa</span>
+                    <span>Oracle SODA</span>
+                </div>
+                <div class="card__formacao">
+                    <p><strong>Foco:</strong> Soluções Full Stack escaláveis e interfaces modernas.</p>
+                </div>
+            </section>
 
-            <a class="apresentacao__skills">
-                <img class="skills_logo" src="./assets/img/logo-react-512.png" alt="logotipo do open ai">
-                <h3 class="descrition_skills">React</h3>
-            </a>
+            <section class="skill__card card--destaque">
+                <div class="card__header">
+                    <h3>Histórico Acadêmico</h3>
+                </div>
+                <ul class="lista__formacao">
+                    <li>
+                        <strong>Tecnologia da Informação</strong>
+                        <span>UNIVESP • Cursando</span>
+                    </li>
+                    <li>
+                        <strong>Dev. Web Front-end</strong>
+                        <span>Oracle Next Education • 2025</span>
+                    </li>
+                    <li>
+                        <strong>Gestão Empresarial</strong>
+                        <span>FATEC • 2017</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>        
 
-            <a class="apresentacao__skills">
-                <img class="skills_logo" src="./assets/img/vite-js-512-logo.png" alt="logotipo do vite">
-                <h3 class="descrition_skills">Vite</h3>
-            </a>
-            <a class="apresentacao__skills">
-                <img class="skills_logo" src="./assets/img/Logo SQL.png" alt="logotipo do SQL">
-                <h3 class="descrition_skills">SQL</h3>
-            </a>
-
-        </nav>
-    </main>
-    
-    <footer>
-        <nav class="links__rodape">
-            <a class="links__links" href="https://www.linkedin.com/in/paulo-hds/" target="_blank">
-                <img src="assets/img/linkedin.png" alt="perfil do linkedin">
-            </a>
-           
-            <a class="links__links" href="https://www.instagram.com/phsinformatica.tec" target="_blank">
-                <img src="assets/img/instagram.png" alt="perfil do instagran">
-            </a>
-            <a class="links__links" href="https://github.com/PHS-informatica" target="_blank">
-                <img src="assets/img/github.png" alt="perfil do github">
-            </a>
-            <a class="links__links" href="https://phsinformatica.vercel.app/" target="_blank">
-                <img src="assets/img/internet.png" alt="acesse meu site pessoal de fotografia">
-            </a>
-            
-        </nav>
-        <p class="developer">Developed by PHS-Informática ®</p>
+    <footer class="rodape">
+        <div class="links__rodape">
+            <a href="https://www.linkedin.com/in/paulo-hds/" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/PHS-informatica" target="_blank"><img src="assets/img/github.png" alt="GitHub"></a>
+            <!--<a href="https://www.instagram.com/phsinformatica.tec" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>-->
+        </div>
+        <p class="developer">© 2026 | Desenvolvido por PHS-Informática ®</p>
     </footer>
-    
 </body>
 </html>

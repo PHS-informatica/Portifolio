@@ -5,99 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/img/PHS INFORMÁTICA - Logo.png">
-    <title>Projetos</title>
+    <title>Projetos | Paulo Henrique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <nav class="cabecalho">
+    <header class="cabecalho">
+        <nav class="cabecalho__container">
             <a class="logotipo" href="index.html">
-                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="logotipo de PHS-informatica"> 
+                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="Logo PHS"> 
             </a>
-
             <div class="menu__atalhos">
-                <a class="menu__atalhos__links" href="index.html">Sobre mim</a>
+                <a class="menu__atalhos__links" href="index.html">Sobre</a>
                 <a class="menu__atalhos__links" href="skills.html">Skills</a>
-                <a class="menu__atalhos__links" href="formação.html">Formação</a>
                 <a class="menu__atalhos__links" href="projetos.html">Projetos</a>
-                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Curriculo</a>
-                <a class="menu__atalhos__links" href="hobbies.html">Hobbies</a>
+                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Currículo</a>
                 <a class="menu__atalhos__links" href="contato.html">Contato</a>
             </div>
         </nav>   
-    </header>  
+    </header>
+
+    <main class="principal">
+    <h1 class="titulo__secao">Portfólio de Projetos</h1>
     
-    <main class="main__projetos">
-        <h1 class="titulo_projetos">Projetos</h1>
-        <ul class="projetos__container">
+    <div class="projetos__grid">
+        <article class="projeto__card">
+            <div class="projeto__imagem__container">
+                <img src="./assets/img/Aluraflix.png" alt="Aluraflix" class="projeto__imagem">
+            </div>
+            <div class="projeto__conteudo">
+                <h3>Alura-Flix</h3>
+                <p>4º desafio proposto pela Alura para consolidar conhecimentos como desenvolvedor React.</p>
+                <div class="projeto__badges">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://alura-flix-delta-ten.vercel.app/" target="_blank" class="btn__projeto">Ver Projeto</a>
+            </div>
+        </article>
 
-                    
-            <a class="apresentacao__projetos" href="https://jogo-do-numero-secreto-five-flame.vercel.app/" target="_blank"> 
-                <img class="capa__projeto" src="./assets/img/Jogo-secreto.png" alt="imagem do jogo secreto">
-                <h3 class="descrition_projeto">Jogo do Número Secreto</h3>
-                <p class="readme">Adivinhe o numero sorteado pela inteligência artificial.</p>
-            </a>
+        <article class="projeto__card">
+            <div class="projeto__imagem__container">
+                <img src="./assets/img/Organograma.png" alt="Organograma" class="projeto__imagem">
+            </div>
+            <div class="projeto__conteudo">
+                <h3>Organograma</h3>
+                <p>Primeiro projeto em React focado em gestão de equipes e componentes dinâmicos.</p>
+                <div class="projeto__badges">
+                    <span>React</span>
+                    <span>Vite</span>
+                </div>
+                <a href="https://organograma-theta-flame.vercel.app/" target="_blank" class="btn__projeto">Ver Projeto</a>
+            </div>
+        </article>
 
-            <a class="apresentacao__projetos" href="https://decodificador-de-textos-lilac.vercel.app/" target="_blank">
-                <img class="capa__projeto" src="./assets/img/Descod-texto.png" alt="imagem descodificador de textos">
-                <h3 class="descrition_projeto">Decodificador de Textos</h3>
-                <p class="readme">Codifique ou descodifique textos de forma facil.</p>
-            </a>
+        <article class="projeto__card">
+            <div class="projeto__imagem__container">
+                <img src="./assets/img/Alura Geek.png" alt="Alura Geek" class="projeto__imagem">
+            </div>
+            <div class="projeto__conteudo">
+                <h3>Alura Geek</h3>
+                <p>Desafio de E-commerce para aplicar conceitos de CRUD e manipulação de DOM.</p>
+                <div class="projeto__badges">
+                    <span>JavaScript</span>
+                    <span>HTML5 / CSS3</span>
+                </div>
+                <a href="https://alura-geek-delta-seven.vercel.app/" target="_blank" class="btn__projeto">Ver Projeto</a>
+            </div>
+        </article>
 
-            <a class="apresentacao__projetos" href="https://aluraplay-plataforma-de-videos.vercel.app/" target="_blank">
-                <img class="capa__projeto" src="./assets/img/alura-play.png" alt="imagem alura play">
-                <h3 class="descrition_projeto">Alura Play</h3>
-                <p class="readme">Este projeto simula uma plataforma de videos.</p>
-            </a>
+       <!-- <article class="projeto__card">
+            <div class="projeto__imagem__container">
+                <img src="./assets/img/site phs-informatica.png" alt="PHS Informatica" class="projeto__imagem">
+            </div>
+             <div class="projeto__conteudo">
+                <h3>PHS-informática</h3>
+                <p>Projeto inicial focado na divulgação de serviços de assistência técnica e tecnologia.</p>
+                <div class="projeto__badges">
+                    <span>Web Design</span>
+                    <span>Portfólio</span>
+                </div>
+                <a href="https://phsinformatica.vercel.app/" target="_blank" class="btn__projeto">Ver Projeto</a>
+            </div>
+        </article> -->
 
-            <a class="apresentacao__projetos" href="https://phsinformatica.vercel.app/" target="_blank">
-                <img class="capa__projeto" src="./assets/img/site phs-informatica.png" alt="imagem site phs-informatica">
-                <h3 class="descrition_projeto">PHS-informatica</h3>
-                <p class="readme">Este é um projeto inicial para divulgar a prestação de serviços.</p>
-            </a>
+        <article class="projeto__card">
+            <div class="projeto__imagem__container">
+                <img src="./assets/img/alura-play.png" alt="Alura Play" class="projeto__imagem">
+            </div>
+            <div class="projeto__conteudo">
+                <h3>Alura Play</h3>
+                <p>Simulação de uma plataforma de vídeos com foco em consumo de API e layout responsivo.</p>
+                <div class="projeto__badges">
+                    <span>API</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://aluraplay-plataforma-de-videos.vercel.app/" target="_blank" class="btn__projeto">Ver Projeto</a>
+            </div>
+        </article>
 
-            <a class="apresentacao__projetos" href="https://alura-geek-delta-seven.vercel.app/" target="_blank">
-                <img class="capa__projeto" src="./assets/img/Alura Geek.png" alt="imagem Alura Geek">
-                <h3 class="descrition_projeto">Alura Geek</h3>
-                <p class="readme">O Alura Geek, foi um desafio proposto pela Alura para por em pratica os conceitos aprendidos.</p>
-            </a>
+        <article class="projeto__card">
+            <div class="projeto__imagem__container">
+                <img src="./assets/img/Descod-texto.png" alt="Decodificador" class="projeto__imagem">
+            </div>
+            <div class="projeto__conteudo">
+                <h3>Decodificador de Texto</h3>
+                <p>Ferramenta de lógica para codificar e decodificar mensagens secretas.</p>
+                <div class="projeto__badges">
+                    <span>Lógica</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://decodificador-de-textos-lilac.vercel.app/" target="_blank" class="btn__projeto">Ver Projeto</a>
+            </div>
+        </article>
 
-            <a class="apresentacao__projetos" href="https://organograma-theta-flame.vercel.app/" target="_blank">
-                <img class="capa__projeto" src="./assets/img/Organograma.png" alt="imagem Organograma">
-                <h3 class="descrition_projeto">Organograma</h3>
-                <p class="readme">Organo foi o primeiro projeto em React desenvolvido com ajuda da Alura</p>
-            </a>
-
-            <a class="apresentacao__projetos" href="https://alura-flix-delta-ten.vercel.app/" target="_blank">
-                <img class="capa__projeto" src="./assets/img/Aluraflix.png" alt="imagem Aluraflix">
-                <h3 class="descrition_projeto">Alura-Flix</h3>
-                <p class="readme">Alura-Flix foi 4º desafio proposto pela Alura para se tornar um desenvolvedor React.</p>
-            </a>
-
-        </ul>
-        
-        
-
+        <article class="projeto__card">
+            <div class="projeto__imagem__container">
+                <img src="./assets/img/Jogo-secreto.png" alt="Jogo Secreto" class="projeto__imagem">
+            </div>
+            <div class="projeto__conteudo">
+                <h3>Jogo do Número Secreto</h3>
+                <p>Adivinhação de números integrada com síntese de voz e I.A. Generativa.</p>
+                <div class="projeto__badges">
+                    <span>I.A.</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://jogo-do-numero-secreto-five-flame.vercel.app/" target="_blank" class="btn__projeto">Ver Projeto</a>
+            </div>
+        </article>
+    </div>
     </main>
-    
-    <footer class="footer__projetos">
-        <nav class="links__rodape__projetos">
-            <a class="links__links" href="https://www.linkedin.com/in/paulo-hds/" target="_blank">
-                <img src="assets/img/linkedin.png" alt="perfil do linkedin">
-            </a>
-           
-            <a class="links__links" href="https://www.instagram.com/phsinformatica.tec" target="_blank">
-                <img src="assets/img/instagram.png" alt="perfil do instagran">
-            </a>
-            <a class="links__links" href="https://github.com/PHS-informatica" target="_blank">
-                <img src="assets/img/github.png" alt="perfil do github">
-            </a>
-            <a class="links__links" href="https://phsinformatica.vercel.app/" target="_blank">
-                <img src="assets/img/internet.png" alt="acesse meu site pessoal de fotografia">
-            </a>
-        </nav>
-        <p class="developer">Developed by PHS-Informática ®</p>
+
+    <footer class="rodape">
+        <div class="links__rodape">
+            <a href="https://www.linkedin.com/in/paulo-hds/" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/PHS-informatica" target="_blank"><img src="assets/img/github.png" alt="GitHub"></a>
+            <!--<a href="https://www.instagram.com/phsinformatica.tec" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>-->
+        </div>
+        <p class="developer">© 2026 | Desenvolvido por PHS-Informática ®</p>
     </footer>
-    
 </body>
 </html>

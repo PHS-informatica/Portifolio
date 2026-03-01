@@ -5,57 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/img/PHS INFORMÁTICA - Logo.png">
-    <title>Contato</title>
+    <title>Contato | Paulo Henrique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <nav class="cabecalho">
+    <header class="cabecalho">
+        <nav class="cabecalho__container">
             <a class="logotipo" href="index.html">
-                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="logotipo de PHS-informatica"> 
+                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="Logo PHS"> 
             </a>
-
             <div class="menu__atalhos">
-                <a class="menu__atalhos__links" href="index.html">Sobre mim</a>
+                <a class="menu__atalhos__links" href="index.html">Sobre</a>
                 <a class="menu__atalhos__links" href="skills.html">Skills</a>
-                <a class="menu__atalhos__links" href="formação.html">Formação</a>
                 <a class="menu__atalhos__links" href="projetos.html">Projetos</a>
-                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Curriculo</a>
-                <a class="menu__atalhos__links" href="hobbies.html">Hobbies</a>
+                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Currículo</a>
                 <a class="menu__atalhos__links" href="contato.html">Contato</a>
             </div>
-            
         </nav>   
-        
     </header>
-    <main>
 
-        <h1 class="titulo__formulario">Formulário de Contato</h1>
+    <main class="principal">
+        <h1 class="titulo__secao">Vamos Conversar?</h1>
+        <p class="subtitulo__contato">Sinta-se à vontade para enviar uma mensagem ou proposta de projeto.</p>
 
-        <div class="form_container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddJy2EMPHBEGfCfTa6pWYQsR7YFHQsRC1jQMmDRepVO_TsjA/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-        
+        <section class="contato__container">
+            <div class="contato__card">
+                <div class="form_container">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSddJy2EMPHBEGfCfTa6pWYQsR7YFHQsRC1jQMmDRepVO_TsjA/viewform?embedded=true" 
+                        width="100%" 
+                        height="800" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">Carregando…</iframe>
+                </div>
+            </div>
+
+            <div class="contato__direto">
+                <h3>Canais Diretos</h3>
+                <div class="contato__item">
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/paulo-hds/" target="_blank">paulo-hds</a>
+                </div>
+                <div class="contato__item">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/PHS-informatica" target="_blank">PHS-informatica</a>
+                </div>
+            </div>
+        </section>
     </main>
-    
-    <footer>
-        <nav class="links__rodape__contato">
-            <a class="links__links" href="https://www.linkedin.com/in/paulo-hds/" target="_blank">
-                <img src="assets/img/linkedin.png" alt="perfil do linkedin">
-            </a>
-           
-            <a class="links__links" href="https://www.instagram.com/phsinformatica.tec" target="_blank">
-                <img src="assets/img/instagram.png" alt="perfil do instagran">
-            </a>
-            <a class="links__links" href="https://github.com/PHS-informatica" target="_blank">
-                <img src="assets/img/github.png" alt="perfil do github">
-            </a>
-            <a class="links__links" href="https://phsinformatica.vercel.app/" target="_blank">
-                <img src="assets/img/internet.png" alt="acesse meu site pessoal de fotografia">
-            </a>
-        </nav>
-        <p class="developer">Developed by PHS-Informática ®</p>
+
+    <footer class="rodape">
+        <div class="links__rodape">
+            <a href="https://www.linkedin.com/in/paulo-hds/" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/PHS-informatica" target="_blank"><img src="assets/img/github.png" alt="GitHub"></a>
+            <!--<a href="https://www.instagram.com/phsinformatica.tec" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>-->
+        </div>
+        <p class="developer">© 2026 | Desenvolvido por PHS-Informática ®</p>
     </footer>
-    
 </body>
 </html>

@@ -4,69 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio de Paulo Henrique dos Santos</title>
+    <title>Paulo Henrique | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <nav class="cabecalho">
+    <header class="cabecalho">
+        <nav class="cabecalho__container">
             <a class="logotipo" href="index.html">
-                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="logotipo de PHS-informatica"> 
+                <img class="logotipo__foto" src="assets/img/PHS INFORMÁTICA - Logo.png" alt="Logo PHS"> 
             </a>
-
             <div class="menu__atalhos">
-                <a class="menu__atalhos__links" href="index.html">Sobre mim</a>
+                <a class="menu__atalhos__links" href="index.html">Sobre</a>
                 <a class="menu__atalhos__links" href="skills.html">Skills</a>
-                <a class="menu__atalhos__links" href="formação.html">Formação</a>
                 <a class="menu__atalhos__links" href="projetos.html">Projetos</a>
-                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Curriculo</a>
-                <a class="menu__atalhos__links" href="hobbies.html">Hobbies</a>
+                <a class="menu__atalhos__links" href="./assets/document/curriculo.pdf" target="_blank">Currículo</a>
                 <a class="menu__atalhos__links" href="contato.html">Contato</a>
-                
             </div>
         </nav>   
     </header>        
+
     <main class="principal">
         <section class="apresentacao">
             <div class="textos">
-                <h1 class="portifolio">Portifólio</h1>
-                <h2 class="apresentacao__titulo">Olá, meu nome é Paulo Henrique dos Santos, e estou me especializando em construir páginas web!</h2>
-                <h3 class="apresentacao__subtitulo">
-                    Sou formado em Gestão Empresarial, e atualmente, estou estudando tecnologia da informação e 
-                    desenvolvimento web front-end.</h3>
+                <span class="badge">Gestão & Tecnologia</span>
+                <h1 class="apresentacao__titulo">Olá!, Sou <span class="destaque">Paulo Henrique</span></h1>
+                <p class="apresentacao__subtitulo">
+                    Especialista em Gestão Empresarial, Análise de dados estratégica e Desenvolvimento Web.
+                </p>
+                <div class="botoes_hero">
+                    <a href="projetos.html" class="btn-principal">Ver Projetos</a>
+                    <a href="https://github.com/PHS-informatica" target="_blank" class="btn-secundario">GitHub</a>
+                </div>
             </div>
             <div class="foto">
-                <img class="foto__perfil" src="assets/img/foto 3x4.jpg" alt="foto de Paulo"> 
+                <img class="foto__perfil" src="assets/img/foto 3x4.jpg" alt="Paulo Henrique"> 
             </div>
         </section>
+
         <section class="sobre__mim">
-            <h2 class="titulo__sobre__mim">Sobre mim</h2>
-            <p class="resumo">Tenho 43 anos, e estou em busca de novas oportunidades. Gosto dos desafios da área de Administração e também das inovações da Tecnologia. Navegue e descubra um pouco mais sobre mim neste site!
-                
-                </p>
+            <h2 class="titulo__secao">Sobre mim</h2>
+            <div class="sobre__mim__cards">
+                <div class="card">
+                    <p>Com uma base sólida no campo de <strong>Gestão Empresarial</strong>, integro o conhecimento estratégico de negócios com o melhor da Tecnologia para alcançar novos resultados.</p>
+                </div>
+                <div class="card">
+                    <p>Utilizo <strong>Oracle, SQL Server, MySQL, Api's e outras fontes de dados</strong> junto ao <strong>Power BI</strong> para transformar dados brutos em insights valiosos para a tomada de decisões corporativas.</p>
+                </div>
+            </div>
         </section>
-
     </main>        
-    <footer>
-        <nav class="links__rodape">
-            <a class="links__links" href="https://www.linkedin.com/in/paulo-hds/" target="_blank">
-                <img src="assets/img/linkedin.png" alt="perfil do linkedin">
-            </a>
-           
-            <a class="links__links" href="https://www.instagram.com/phsinformatica.tec" target="_blank">
-                <img src="assets/img/instagram.png" alt="perfil do instagran">
-            </a>
-            <a class="links__links" href="https://github.com/PHS-informatica" target="_blank">
-                <img src="assets/img/github.png" alt="perfil do github">
-            </a>
-            <a class="links__links" href="https://phsinformatica.vercel.app/" target="_blank">
-                <img src="assets/img/internet.png" alt="acesse meu site pessoal de fotografia">
-            </a>
-        </nav>
-        <p class="developer">Developed by PHS-Informática ®</p>
-    </footer>
 
-    
-    
+    <footer class="rodape">
+        <div class="links__rodape">
+            <a href="https://www.linkedin.com/in/paulo-hds/" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/PHS-informatica" target="_blank"><img src="assets/img/github.png" alt="GitHub"></a>
+            <!--<a href="https://www.instagram.com/phsinformatica.tec" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>-->
+        </div>
+        <p class="developer">© 2026 | Desenvolvido por PHS-Informática ®</p>
+    </footer>
 </body>
 </html>
