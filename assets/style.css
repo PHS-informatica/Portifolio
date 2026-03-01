@@ -447,3 +447,44 @@ body {
     .menu__atalhos { display: none; } /* Ideal criar menu hamburguer depois */
     .foto__perfil { width: 200px; box-shadow: 15px 15px 0px var(--cor-destaque); }
 }
+
+/* Esconde o checkbox e o ícone no Desktop */
+#menu-bar, .menu-icon {
+    display: none;
+}
+
+/* --- CONFIGURAÇÃO MOBILE (Media Query) --- */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        color: #2d3748;
+        cursor: pointer;
+    }
+
+    .menu__atalhos {
+        position: absolute;
+        top: 80px; /* Ajuste conforme a altura do seu header */
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        display: none; /* Começa escondido */
+        z-index: 1000;
+    }
+
+    /* Quando o checkbox for marcado, mostra o menu */
+    #menu-bar:checked ~ .menu__atalhos {
+        display: flex;
+    }
+
+    .menu__atalhos__links {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
